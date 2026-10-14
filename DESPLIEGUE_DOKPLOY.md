@@ -2,6 +2,14 @@
 
 Repositorio: https://github.com/DuarCas-maker/Demo-Donaciones
 
+Sitio publicado: https://donaciones-albadan.riverosadvisory.com/
+
+Proyecto: **Donaciones Albadan**, entorno **production**, aplicación **donaciones-albadan**.
+
+Panel de la aplicación: https://dokploy.duarcas.com/dashboard/project/9davEJDAzzq-DB3V0sLfE/environment/QUiQ6hXIkBlLngzIsuxYC/services/application/vXxEz35fmNr-evB8Z7zVp
+
+La primera compilación Docker se completó correctamente con el commit `4319fb6`. El dominio respondió por HTTPS y `/health` devolvió `200`. La cuenta GitHub existente de Dokploy se vinculó al repositorio con Autodeploy y el disparador On Push en `main`.
+
 - Rama: `main`.
 - Ruta de compilación: `/` (raíz del repositorio).
 - Tipo de compilación: Dockerfile.

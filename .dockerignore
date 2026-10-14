@@ -1,0 +1,12 @@
+.git
+.pnpm-store
+node_modules
+dist
+tmp
+test-results
+evidencia
+*.tsbuildinfo
+.env*
+*.local
+*.md
+ARRANCAR_DEMO.ps1

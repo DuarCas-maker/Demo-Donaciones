@@ -66,4 +66,4 @@ Consulta `GUIA_DEMO.md`, `DECISIONES_PENDIENTES.md`, `ROADMAP.md` y `NOTAS_PRUEB
 
 Repositorio: [DuarCas-maker/Demo-Donaciones](https://github.com/DuarCas-maker/Demo-Donaciones).
 
-El despliegue de esta demo en Dokploy se configurará en un paso posterior. `.gitignore` excluye dependencias, cachés, variables de entorno y salidas temporales.
+La configuración de contenedor y dominio para Dokploy está documentada en `DESPLIEGUE_DOKPLOY.md`. `.gitignore` excluye dependencias, cachés, variables de entorno y salidas temporales.

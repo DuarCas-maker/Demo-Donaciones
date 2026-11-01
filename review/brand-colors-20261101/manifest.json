@@ -1,0 +1,25 @@
+{
+  "format": "sha256 of UTF-8 text normalized to LF",
+  "files": [
+    {
+      "path": "apps/web/src/institutional.css",
+      "before_sha256_lf": "a1600826fe7ecbd40b9d8a271d4f2f0d6e0f0edf400eceec789682f9f4c427d5",
+      "after_sha256_lf": "ab9c5c89ebd8613363d93a6e496443229e664ad58c43da879f8f4a37a462c5ce"
+    },
+    {
+      "path": "packages/ui/src/styles.css",
+      "before_sha256_lf": "0f8a9283e566f4fe8f9ce7129cf4cf1182e0e76c0a4daca09578f8be07fa0e2a",
+      "after_sha256_lf": "1c755d473669cf4a33cecc4028202cd7da3987506ba34fa1961f498164949310"
+    },
+    {
+      "path": "packages/ui/src/live.css",
+      "before_sha256_lf": "89a5d25abec766b094abf1dc0f520c197ec140823e54a0368ca9defa35d97312",
+      "after_sha256_lf": "b2b519456cefab9e8f17c3fc9ec2e87e4fe644277eade443c11eb76a94eb44e6"
+    },
+    {
+      "path": "BRAND_ASSETS.md",
+      "before_sha256_lf": "1842266b3f5313754c3e458fd8a6d5148306d7ff39c3abc8fbc2058d81efe850",
+      "after_sha256_lf": "60941fd3605ef4f1eaa939490220a4a26023c4f93f113e73b2914218cecd4dba"
+    }
+  ]
+}

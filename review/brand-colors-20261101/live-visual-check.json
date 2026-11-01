@@ -1,0 +1,50 @@
+[
+  {
+    "width": 360,
+    "colors": {
+      "background": "rgb(41, 0, 53)",
+      "brand": "rgb(255, 255, 255)",
+      "overflow": false
+    },
+    "states": [
+      "normal",
+      "empty",
+      "error",
+      "loading"
+    ],
+    "errors": [],
+    "source": "built app, synthetic local API fixtures only"
+  },
+  {
+    "width": 768,
+    "colors": {
+      "background": "rgb(41, 0, 53)",
+      "brand": "rgb(255, 255, 255)",
+      "overflow": false
+    },
+    "states": [
+      "normal",
+      "empty",
+      "error",
+      "loading"
+    ],
+    "errors": [],
+    "source": "built app, synthetic local API fixtures only"
+  },
+  {
+    "width": 1280,
+    "colors": {
+      "background": "rgb(41, 0, 53)",
+      "brand": "rgb(255, 255, 255)",
+      "overflow": false
+    },
+    "states": [
+      "normal",
+      "empty",
+      "error",
+      "loading"
+    ],
+    "errors": [],
+    "source": "built app, synthetic local API fixtures only"
+  }
+]

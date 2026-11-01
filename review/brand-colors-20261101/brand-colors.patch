@@ -1,0 +1,107 @@
+--- a/apps/web/src/institutional.css
++++ b/apps/web/src/institutional.css
+@@ -1,3 +1,29 @@
+ .institutional-web .skip-link{position:absolute;left:18px;top:-80px;z-index:50;padding:12px 18px;background:var(--brand-primary);color:white;border-radius:6px}.institutional-web .skip-link:focus{top:12px}.institutional-web .hero-actions{flex-wrap:wrap}.institutional-intro{padding-top:42px;padding-bottom:48px;border-top:1px solid var(--border);display:grid;grid-template-columns:1fr 1fr;gap:22px 50px}.institutional-intro .eyebrow{grid-column:1/-1;margin:0}.institutional-intro p{font-size:15px;color:var(--muted);max-width:490px}.institutional-intro .text-link{grid-column:2}.institutional-card .cause-body>svg{color:var(--brand-violet);margin-bottom:14px}.institutional-card h3{font-size:23px;margin-bottom:12px}.institutional-card .cause-body p{min-height:0;font-size:14px}.institutional-cta{border-radius:16px;margin-bottom:70px;padding-top:54px;padding-bottom:54px;display:flex;justify-content:space-between;align-items:center;gap:30px}.institutional-cta p{max-width:550px;margin:22px 0}.institutional-cta .cta-leaf{position:static;flex-shrink:0;opacity:.65}.institutional-page{padding-top:56px;padding-bottom:76px;min-height:55vh}.institutional-page h1{max-width:900px}.institutional-page .lead{max-width:760px;margin:22px 0 42px;color:var(--muted);font-size:18px}.institutional-story{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:70px;margin-top:55px}.institutional-story p{margin:24px 0;color:var(--muted);font-size:15px}.institutional-story img{width:100%;height:420px;object-fit:cover;border-radius:14px}.institutional-note{padding-top:28px;color:var(--muted);font-size:12px;max-width:800px}.institutional-contact{display:flex;align-items:flex-start;gap:22px;background:var(--brand-ivory);padding:38px;border-radius:14px;margin-bottom:34px}.institutional-contact h2{font-size:25px;margin-bottom:15px}.institutional-contact a{color:var(--brand-violet);font-size:clamp(14px,2vw,22px);text-decoration:underline;overflow-wrap:anywhere}.institutional-contact p{margin-top:20px;color:var(--muted);font-size:13px}.institutional-web .footer-top>nav{display:flex;flex-direction:column;gap:12px;font-size:12px}.institutional-web main:focus{outline:none}
++/* Brand manual, p. 4: purple navigation over white content surfaces. */
++.institutional-web { background: var(--surface); }
++.institutional-web .public-header {
++  max-width: none;
++  padding-inline: max(50px, calc((100% - 1160px) / 2));
++  background: var(--brand-primary);
++  color: white;
++  border-bottom: 1px solid var(--brand-gold);
++}
++.institutional-web .public-header .brand,
++.institutional-web .public-header .brand-foundation,
++.institutional-web .public-header .brand small,
++.institutional-web .public-nav > a.active { color: white; }
++.institutional-web .public-nav > a.active:not(.btn) { border-bottom-color: var(--brand-gold); }
++.institutional-web .public-nav > a:not(.btn):hover { text-decoration: underline; text-underline-offset: 6px; text-decoration-color: var(--brand-gold); }
++.institutional-web .public-nav .btn { background: var(--brand-secondary); color: white; border: 1px solid var(--brand-gold); }
++.institutional-web .public-nav .btn:hover { background: var(--brand-violet); }
++.institutional-web .public-header .icon-button:hover { background: var(--brand-secondary); }
++.institutional-web .public-header :focus-visible { outline-color: var(--brand-light-gold); }
++.institutional-web .institutional-cta { background: var(--surface); color: var(--brand-primary); border: 1px solid var(--border); border-top: 3px solid var(--brand-gold); }
++.institutional-web .institutional-cta .eyebrow { color: var(--brand-secondary); }
++.institutional-web .institutional-cta p { color: var(--muted); }
++.institutional-web .institutional-cta .btn { background: var(--brand-primary); color: white; }
++.institutional-web .institutional-cta .btn:hover { background: var(--brand-secondary); }
++.institutional-web .institutional-cta .cta-leaf { color: var(--brand-violet); opacity: 1; }
++@media(max-width:980px) { .institutional-web .public-nav { background: var(--brand-primary); color: white; border-bottom-color: var(--brand-gold); } }
+ @media(max-width:900px){.institutional-web .public-header{padding-left:28px;padding-right:28px}.institutional-web .public-nav{gap:18px}.institutional-story{gap:35px}.institutional-cta{margin-left:28px;margin-right:28px}.institutional-web .hero-stamp{right:0}.institutional-web .hero-float{left:0;right:20px}}
+ @media(max-width:680px){.institutional-web .public-header{padding-left:20px;padding-right:20px}.institutional-web .hero-copy h1{font-size:44px}.institutional-web .hero-actions{gap:18px}.institutional-intro{display:block;padding-top:30px;padding-bottom:30px}.institutional-intro .eyebrow{margin-bottom:18px}.institutional-intro p{margin:22px 0}.institutional-page{padding-top:35px;padding-bottom:45px}.institutional-page h1{font-size:34px;overflow-wrap:break-word}.institutional-page .lead{font-size:16px;margin-bottom:30px}.institutional-story{grid-template-columns:1fr;gap:28px;margin-top:35px}.institutional-story img{height:290px}.institutional-cta{margin-left:18px;margin-right:18px;margin-bottom:40px;padding:32px 24px}.institutional-cta h2{font-size:28px}.institutional-cta .cta-leaf{display:none}.institutional-contact{padding:24px 20px;gap:14px}.institutional-contact>svg{width:23px}.institutional-contact h2{font-size:22px}.institutional-web .public-nav.open{left:0;right:0}.institutional-web .footer-bottom{gap:14px}.institutional-web .hero-stamp{width:82px;height:82px}.institutional-web .hero-stamp span{font-size:7px}}
+--- a/packages/ui/src/styles.css
++++ b/packages/ui/src/styles.css
+@@ -8,14 +8,14 @@
+   font-weight: 400;
+   line-height: 1.6;
+   color: #32183c;
+-  background: #fffdf9;
++  background: #fff;
+   --brand-primary: #290035;
+   --brand-secondary: #41065c;
+   --brand-violet: #7314b2;
+   --brand-gold: #d5a63c;
+   --brand-light-gold: #ffe28a;
+   --brand-ivory: #fff3d5;
+-  --surface: #fffdf9;
++  --surface: #fff;
+   --surface-soft: #f5f0f7;
+   --muted: #6b5b73;
+   --border: #e4dae8;
+@@ -40,7 +40,7 @@
+ /* Foundation identity: the original logo remains complete and proportional. */
+ .brand { gap: 13px; max-width: 310px; min-width: 0; font-size: 17px; line-height: 1.25; }
+ .brand-logo { display: block; width: 64px; height: auto; flex-shrink: 0; }
+-.brand>.brand-copy { white-space: normal; min-width: 0; }
++.brand>span.brand-copy { white-space: normal; min-width: 0; }
+ .brand-foundation { display: block; font-size: 10px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+ .brand b { display: block; font-weight: 700; }
+ .brand small { max-width: 205px; font-size: 9px; letter-spacing: 0; text-transform: none; line-height: 1.5; color: var(--muted); }
+@@ -72,6 +72,15 @@
+ .table-wrap { max-width: 100%; }
+ .amount-input>input { min-width: 0; }
+ .brand:focus-visible { border-radius: 3px; }
++/* Official brand colors for account headers; content keeps its light surface. */
++.app-header { background: var(--brand-primary); color: white; border-bottom-color: var(--brand-gold); }
++.app-header .breadcrumb,.app-header .breadcrumb>a,.app-header .mode-tag { color: white; }
++.app-header .mode-tag { background: var(--brand-secondary); }
++.app-header .mode-tag i { background: var(--brand-light-gold); }
++.app-header .icon-button:hover { background: var(--brand-secondary); }
++.app-header .profile-picker select { background: var(--brand-secondary); color: white; border-color: var(--brand-gold); }
++.app-header .avatar { background: var(--brand-ivory); color: var(--brand-primary); }
++.app-header :focus-visible { outline-color: var(--brand-light-gold); }
+ @media(max-width:980px) {
+   .public-header { position: relative; min-height: 108px; }
+   .public-header .brand { max-width: calc(100% - 46px); }
+--- a/packages/ui/src/live.css
++++ b/packages/ui/src/live.css
+@@ -2,4 +2,11 @@
+ @media(max-width:1220px){.live-workspace-nav,.live-workspace-content,.live-workspace-footer{margin-left:28px;margin-right:28px}}@media(max-width:680px){.live-workspace-header{padding:20px;align-items:flex-start;flex-direction:column;gap:22px}.live-session-summary{justify-content:flex-start;gap:12px}.live-session-summary>small{width:100%}.live-workspace-nav,.live-workspace-content,.live-workspace-footer{margin-left:18px;margin-right:18px}.live-workspace-content{padding-top:28px}.live-workspace-content .page-title h1{font-size:30px}.live-data-panel{padding:22px 18px}.live-profile-details{grid-template-columns:1fr;gap:20px}.live-pagination{gap:8px}.live-pagination .btn{padding:9px 11px}.live-table-scroll th,.live-table-scroll td{padding:14px 9px}.live-feedback h2{font-size:22px}}
+ .live-profile-details>div{display:block;padding-top:0}.live-profile-details dd{text-align:left}
+ .live-workspace-header>.brand{flex-shrink:0}.live-session-summary{min-width:0}
++.live-workspace { background: var(--surface); }
++.live-workspace-header { background: var(--brand-primary); color: white; border-bottom: 1px solid var(--brand-gold); }
++.live-workspace-header .brand,.live-workspace-header .brand-foundation,.live-workspace-header .brand small,
++.live-workspace-header .live-session-summary>span,.live-workspace-header .live-session-summary>small { color: white; }
++.live-workspace-header .btn.secondary { background: var(--brand-secondary); color: white; border-color: var(--brand-gold); }
++.live-workspace-header .btn.secondary:hover:not(:disabled) { background: var(--brand-violet); }
++.live-workspace-header :focus-visible { outline-color: var(--brand-light-gold); }
+ @media(max-width:1000px){.live-workspace-header{align-items:flex-start;flex-direction:column}.live-session-summary{justify-content:flex-start}}
+--- a/BRAND_ASSETS.md
++++ b/BRAND_ASSETS.md
+@@ -5,6 +5,14 @@
+ Manual recibido del usuario: Manual_Marca_Abrigame_Logo_Nuevo (1).pdf, páginas 1 a 6. El logo de packages/shared/src/assets/brand/abrigame-renuevame-logo.jpg reproduce la región completa del logo de la página 1. Se extrajo con Poppler a escala de página de 1000 píxeles, región x=528, y=32, ancho=456, alto=488, salida JPEG calidad 92. No se añadieron elementos ni se modificó su composición. Es un activo de previsualización, limitado por la resolución de la página; reemplazar con el original antes del lanzamiento.
+ 
+ El nombre, lema, dominio y colores se centralizan en packages/shared/src/data/brand.ts. El dominio fue aportado por el usuario: fundacion-abrigame-y-renuevame.org. No se han configurado DNS ni hosting.
++
++### Aplicación cromática · 01-11-2026
++
++Se contrastaron visualmente las seis páginas del manual adjunto. La paleta existente coincide con la página 4: morado base `#290035`, púrpura `#41065C`, violeta `#7314B2`, dorado `#D5A63C`, oro luz `#FFE28A` y marfil `#FFF3D5`. El manual identifica los códigos HEX como aproximaciones al logo, que contiene reflejos y degradados.
++
++La barra pública del logo y menú usa morado base a todo el ancho y texto blanco, también en el menú móvil. Los encabezados compartidos del portal usan la misma combinación; púrpura para controles, dorado para detalles y oro luz para el foco sobre fondo oscuro. Las superficies de contenido son blancas; la invitación de contacto de la web también conserva fondo blanco con acento dorado. No se recoloreó ni recortó el logo y se mantiene DejaVu Sans, según la página 5.
++
++Capturas y comprobaciones visuales locales: `evidencia/marca-20261101/`. Cambio SDD LITE de presentación, sin modificación de flujos ni despliegue.
+ 
+ ## Tipografía
+ 

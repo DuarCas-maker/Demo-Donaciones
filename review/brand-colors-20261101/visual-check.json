@@ -1,0 +1,68 @@
+[
+  {
+    "width": 360,
+    "web": {
+      "background": "rgb(41, 0, 53)",
+      "text": "rgb(255, 255, 255)",
+      "surface": "rgb(255, 255, 255)",
+      "invitation": "rgb(255, 255, 255)",
+      "width": 360,
+      "overflow": false
+    },
+    "focus": {
+      "focused": true,
+      "color": "rgb(255, 226, 138)",
+      "width": "3px"
+    },
+    "portal": {
+      "background": "rgb(41, 0, 53)",
+      "breadcrumb": "rgb(255, 255, 255)",
+      "overflow": false
+    },
+    "errors": []
+  },
+  {
+    "width": 768,
+    "web": {
+      "background": "rgb(41, 0, 53)",
+      "text": "rgb(255, 255, 255)",
+      "surface": "rgb(255, 255, 255)",
+      "invitation": "rgb(255, 255, 255)",
+      "width": 768,
+      "overflow": false
+    },
+    "focus": {
+      "focused": true,
+      "color": "rgb(255, 226, 138)",
+      "width": "3px"
+    },
+    "portal": {
+      "background": "rgb(41, 0, 53)",
+      "breadcrumb": "rgb(255, 255, 255)",
+      "overflow": false
+    },
+    "errors": []
+  },
+  {
+    "width": 1280,
+    "web": {
+      "background": "rgb(41, 0, 53)",
+      "text": "rgb(255, 255, 255)",
+      "surface": "rgb(255, 255, 255)",
+      "invitation": "rgb(255, 255, 255)",
+      "width": 1280,
+      "overflow": false
+    },
+    "focus": {
+      "focused": true,
+      "color": "rgb(255, 226, 138)",
+      "width": "3px"
+    },
+    "portal": {
+      "background": "rgb(41, 0, 53)",
+      "breadcrumb": "rgb(255, 255, 255)",
+      "overflow": false
+    },
+    "errors": []
+  }
+]
